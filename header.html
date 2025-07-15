@@ -45,19 +45,23 @@
     .main-navbar {
       background-color: #fff;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-      padding: 1rem 0;
-      transform: translateX(-40px);
+      padding: 0rem 0 !important;
+      transform: translateX(-20px);
     }
 
     .navbar-brand img {
       height: 50px;
+    }
+    .navbar{
+      padding: 0 auto !important;
+      height: 80px;
     }
 
     .navbar-nav .nav-link {
       font-weight: 100 !important;
       color: black;
       font-size: 14px;
-      margin: 0 7px;
+      margin: 0 5px;
     }
     .contact{
       transform: translateX(40px);
@@ -78,10 +82,13 @@
     .dropdown-menu a:hover {
       background-color: #f8f9fa;
     }
-     @media (max-width: 1200px) {
+     @media (max-width: 1220px) {
         #mainNav{
             /* position: relative !important; */
             right: 2rem;
+        }
+        .bl{
+          display: none;
         }
      }
     /* @media (max-width: 420px) {
@@ -106,6 +113,9 @@
     .navbar-collapse{
         align-items: start !important;
     }
+    .contact{
+      transform: none;
+    }
     /* .collapse{
         position: absolute !important;
         right: 0 !important;
@@ -128,7 +138,7 @@
         }
     #mainNav{
         position: absolute;
-        right: 10rem;
+        right: 6rem;
     }
     .navbar{
       transition: 1s;
@@ -159,8 +169,8 @@
 <!-- Top Bar -->
     <div class="topbar text-white py-2" style="background-color: #ed1c24;">
       <div class="container d-flex justify-content-between align-items-center flex-wrap">
-        <div class="contact-info small">
-          Call Us Today! +965-22054017 | info@kuwaitintl.com
+        <div class="contact-info small fw-bold">
+          Call Us - +91 9311535770 | bipl.enquiry@gmail.com
         </div>
         <div class="social-icons">
           <a href="#"><i class="fas fa-envelope text-white"></i></a>
@@ -176,8 +186,8 @@
       <div class="container d-flex justify-content-between align-items-center">
         <!-- Logo -->
         <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="images/bipllogo.png" alt="Logo" style="height: 55px;" class="me-2">
-          <span class="fw-bold">Bioremax Innovation Pvt Ltd</span>
+          <img src="images/bipllogo.png" alt="Logo" style="height: 75px; filter: saturate(1.2) contrast(1.1);" class="me-2">
+          <span class="fw-bold bl">Bioremax Innovation Pvt Ltd</span>
         </a>
 
         <!-- Navbar Toggler -->
@@ -198,8 +208,10 @@
                 <li><a class="dropdown-item" href="#">Team</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link fw-semibold" href="#">Products and Services</a></li>
-            <li class="nav-item"><a class="nav-link fw-semibold" href="#">Newsroom</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="#">Technology</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="#">Project</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="#">Impact studies</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="#">Career</a></li>
             <li class="nav-item"><a class="nav-link fw-semibold bg-warning contact shadow p-2 px-3" href="#">Contact Us</a></li>
           </ul>
         </div>
