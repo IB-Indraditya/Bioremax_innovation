@@ -37,7 +37,7 @@
     }
 
     .topbar .social-icons a {
-      color: white;
+      /* color: white; */
       margin-left: 15px;
       text-decoration: none;
     }
@@ -46,6 +46,7 @@
       background-color: #fff;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
       padding: 1rem 0;
+      transform: translateX(-40px);
     }
 
     .navbar-brand img {
@@ -53,13 +54,20 @@
     }
 
     .navbar-nav .nav-link {
-      font-weight: 600;
-      color: white;
-      margin: 0 10px;
+      font-weight: 100 !important;
+      color: black;
+      font-size: 14px;
+      margin: 0 7px;
+    }
+    .contact{
+      transform: translateX(40px);
+      /* border-radius: 4px; */
+      text-transform: uppercase;
+      letter-spacing: 3px;
     }
 
     .navbar-nav .nav-link:hover {
-      color: #6098d5 !important;
+      color: orangered !important;
     }
 
     .dropdown-menu {
@@ -120,23 +128,25 @@
         }
     #mainNav{
         position: absolute;
-        right: 3.2rem;
+        right: 10rem;
     }
     .navbar{
       transition: 1s;
     }
-    .navbar:hover{
+    /* .navbar:hover{
       background-color: rgba(0, 0, 0, 0.7) !important;
-    }
+    } */
     /* Hide navbar when scrolling down */
     .navbar-scroll-up {
       top: 0 !important;
       transition: top 0.4s;
+      z-index: -10;
     }
 
     .navbar-scroll-down {
-      top: -100px !important;
+      top: -200px !important;
       transition: top 0.4s;
+      z-index: -10;
     }
 
 
@@ -146,35 +156,56 @@
 <body>
   <!-- Top Bar -->
   <!-- Background Section -->
-  <div style="background: url('images/bg-hero.jpg') no-repeat center center/cover; height: 500px; position: relative;">
-    
-    <!-- Transparent Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top py-3 navbar-scroll-up">
-      <div class="container">
+<!-- Top Bar -->
+    <div class="topbar text-white py-2" style="background-color: #ed1c24;">
+      <div class="container d-flex justify-content-between align-items-center flex-wrap">
+        <div class="contact-info small">
+          Call Us Today! +965-22054017 | info@kuwaitintl.com
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fas fa-envelope text-white"></i></a>
+          <a href="#"><i class="fab fa-twitter text-white"></i></a>
+          <a href="#"><i class="fab fa-linkedin text-white"></i></a>
+          <a href="#"><i class="fab fa-instagram text-white"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Logo -->
         <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="images/edgelogo.png" alt="Logo" style="height: 40px;" class="me-2">
-          <span class="fw-bold text-white">Edge Machines</span>
+          <img src="images/bipllogo.png" alt="Logo" style="height: 55px;" class="me-2">
+          <span class="fw-bold">Bioremax Innovation Pvt Ltd</span>
         </a>
+
+        <!-- Navbar Toggler -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-center">
-            <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#">Product</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#">Download</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#">Video</a></li>
-            <!-- <li class="nav-item"><a class="nav-link text-white" href="#">Contact</a></li> -->
+        <!-- Center Navigation -->
+        <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a href="#" class="btn btn-warning rounded-pill px-4 fw-bold ms-3" style="background-color: #f26522; border: none;">
-                Contact Us
-              </a>
+              <a class="nav-link text-success fw-semibold" href="#">Home</a>
             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fw-semibold" href="#" data-bs-toggle="dropdown">Company Profile</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">About</a></li>
+                <li><a class="dropdown-item" href="#">Team</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="#">Products and Services</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="#">Newsroom</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold bg-warning contact shadow p-2 px-3" href="#">Contact Us</a></li>
           </ul>
         </div>
       </div>
     </nav>
+
 
     <!-- Optional Hero Heading -->
     <!-- <div class="container h-100 d-flex align-items-end pb-5">
@@ -195,12 +226,12 @@
         // Scrolling down
         navbar.classList.remove("navbar-scroll-up");
         navbar.classList.add("navbar-scroll-down");
-        document.querySelector(".navbar").style.setProperty("background", "rgba(0, 0, 0, 0.4)", "important");
+        // document.querySelector(".navbar").style.setProperty("background", "rgba(0, 0, 0, 0.4)", "important");
       } else {
         // Scrolling up
         navbar.classList.remove("navbar-scroll-down");
         navbar.classList.add("navbar-scroll-up");
-        document.querySelector(".navbar").style.setProperty("background", "rgba(0, 0, 0, 0.7)", "important");
+        // document.querySelector(".navbar").style.setProperty("background", "rgba(0, 0, 0, 0.7)", "important");
         // document.querySelector(".navbar").style.background="rgba(0, 0, 0, 0.6) !important;";
       }
 
