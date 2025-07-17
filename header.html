@@ -11,7 +11,14 @@
   
   <!-- Bootstrap Bundle JS (includes Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- Owl Carousel JS (Place before closing body tag) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
   <!-- Fonts and Icons -->
   <link href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
@@ -55,7 +62,9 @@
     .navbar{
       background: white;
       padding: 0 auto !important;
-      height: 80px;
+      height: 90px;
+      
+      /* width: 100%; */
     }
 
     .navbar-nav .nav-link {
@@ -121,6 +130,13 @@
         position: absolute !important;
         right: 0 !important;
     } */
+    }
+    .navbar{
+      background: white;
+      padding: 0 auto !important;
+      height: 100px !important;
+      
+      /* width: 100%; */
     }
      @media (max-width: 800px) {
         #mainNav{

@@ -143,21 +143,75 @@
 
 
     </style>
+    <style>
+        @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+
+        .carousel-caption h1 {
+            animation: fadeInUp 1s ease-out 0.5s both;
+            } 
+        .item{
+            
+        }
+        .item img{
+            height: 200px !important;
+        }
+    </style>
+
 </head>
 <body>
     <section class="minscreen">
         <header id="theader" class="w-100 fixed-top"></header>
-        <section class="hero pt-0 pb-0 w-100 bg-dark position-relative">
-        <div class="position-relative w-100" style="height: 600px; overflow: hidden;">
-            <!-- Background Image -->
-            <img src="https://kuwaitintl.com/wp-content/uploads/2017/02/h1.jpg" class="w-100 h-100 object-fit-cover" style="object-fit: cover;" alt="Hero Image">
-
-            <!-- Overlay Text -->
-            <div class="position-absolute w-100 top-50 start-50 translate-middle text-center text-white px-0 mt-5">
-            <h1 class="fw-bold display-4 w-100" style="background-color: rgba(0,128,0,0.5); display: inline-block; padding: 40px 20px; border-radius: 4px; text-shadow: 0 0 5px black;">
-                Bioremax Innovation Private Limited
-            </h1>
+        <section class="hero pt-0 pb-0 w-100 bg-dark position-relative mt-5">
+        <div id="heroCarousel" class="carousel slide mt-5" data-bs-ride="carousel" data-bs-interval="4000">
+            <!-- Carousel Inner -->
+            <div class="carousel-inner" style="height: 640px;">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="https://kuwaitintl.com/wp-content/uploads/2017/02/h1.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Hero Image 1">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                <h1 class="fw-bold display-4 bg-opacity-50 text-white px-4 py-3 rounded text-shadow">
+                    Bioremax Innovation Private Limited
+                </h1>
+                </div>
             </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="https://kuwaitintl.com/wp-content/uploads/2019/04/videoblocks-beautiful-blonde-woman-manager-giving-direction-to-multiethnic-team-creative-business-meeting-at-modern-hipster-office_hadeehxjw_thumbnail-full01.png" class="w-100 h-100" style="object-fit: cover;" alt="Hero Image 2">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                <h1 class="fw-bold display-4 bg-opacity-50 text-white px-4 py-3 rounded text-shadow">
+                    Engineering Possibilities into Realities
+                </h1>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="https://images2.alphacoders.com/546/546183.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Hero Image 3">
+                <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100">
+                <h1 class="fw-bold display-4  bg-opacity-50 text-white px-4 py-3 rounded text-shadow">
+                    Your Trusted Innovation Partner
+                </h1>
+                </div>
+            </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
 
         <!-- Yellow Welcome Section -->
@@ -165,92 +219,126 @@
             <h5 class="text-dark mb-5 py-4" style="letter-spacing: 1px;">
             WELCOME TO Bioremax Innovation Private Limited
             </h5>
-            <div class=" bg-white w-100 py-5 pb-0">
-                <a href="#" class="btn btn-dark px-5 py-3 text-uppercase rounded-0 shadow" style="transform: translateY(-80px); letter-spacing: 4px;">
+            <div class="bg-white w-100 py-5 pb-0">
+            <a href="#" class="btn btn-dark px-5 py-3 text-uppercase rounded-0 shadow" style="transform: translateY(-80px); letter-spacing: 4px;">
                 CHECKOUT OUR POSSIBILITIES
+            </a>
+            </div>
+        </div>
+        </section>
+
+        <section class="about-us-section py-5 w-100 mb-0 pb-2" style="background: linear-gradient(to top, gainsboro, white);">
+        <div class="container pb-5">
+            <div class="text-center mb-4">
+            <h2 class="fw-bold text-dark display-5 animate__animated animate__fadeInDown">
+                About <span class="text-warning">Bioremax Innovation</span>
+            </h2>
+            <div class="underline mx-auto mt-3" style="width: 100px; height: 4px; background-color: #f5b400; border-radius: 2px;"></div>
+            </div>
+
+            <div class="content mx-auto" style="max-width: 1000px;">
+            <p class="lead fw-medium text-muted animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                <strong>Bioremax Innovation Private Limited (BIPL)</strong> is a research startup company registered under 
+                <span class="text-dark">I-Startup Rajasthan</span> and <span class="text-dark">MSE</span> with the Rajasthan Government.
+                Founded on <strong>18th July 2024</strong>, BIPL specializes in developing innovative, environmentally sustainable solutions.
+                Based in <strong>Jaipur, Rajasthan</strong>, the company is driven by a team of over six scientists and employees.
+            </p>
+
+            <p class="lead fw-medium text-muted animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                BIPL has developed an <span class="text-dark">enzyme-based bioremediation process</span> capable of breaking down 
+                oily sludge, crude sludge, and drill cuttings. This process is <strong>100% natural, eco-friendly, and cost-effective</strong>.
+                It transforms harmful hydrocarbons into non-toxic fatty acids using enzymes sourced from naturally occurring microbes.
+            </p>
+
+            <p class="lead fw-medium text-muted animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+                As the <strong>first startup recognized by the Rajasthan government</strong> for science-based pollutant site restoration, 
+                BIPL leads in biotechnological innovation. Its proprietary <span class="text-dark">super enzyme</span> offers a pioneering 
+                solution for the safe treatment of oil-based environmental pollutants.
+            </p>
+
+            <div class="text-end mt-4">
+                <a href="about.html" class="btn btn-warning shadow px-5 py-2 fw-bold rounded-1 border border-secondary">
+                Learn More
                 </a>
             </div>
-            
-        </div>
-        </section>
-        <section class="about-us-section py-5 text w-100 mb-0 pb-2" style="background: linear-gradient(to top, gainsboro, white);">
-        <div class="container pb-5">
-            <h2 class="fw-semibold text-dark mb-2">About Bioremax Innovation Private Limited</h2>
-            <div class="underline mx-auto my-3 mb-4" style="width: 100%; height: 1px; background-color: #f5b400;"></div>
-            <p class="lead fw-medium text-muted" style="max-width: 1200px; margin: auto;">
-            Bioremax Innovation Private Limited (BIPL) is a research startup company registered under I-Startup Rajasthan and MSE with the Rajasthan Government. Founded on 18th July 2024, BIPL specializes in developing innovative, environmentally sustainable solutions. Based in Jaipur, Rajasthan, the company is driven by a team of over six scientists and employees.
-            </p>
-            <p class="lead fw-medium text-muted mt-3" style="max-width: 1200px; margin: auto;">
-            BIPL has developed an enzyme-based bioremediation process capable of breaking down all fractions of oily sludge, crude sludge, and drill cuttings. This process is 100% natural, eco-friendly, and cost-effective. It transforms harmful hydrocarbons into non-toxic fatty acids through enzymes sourced from naturally occurring microbes.
-            </p>
-            <p class="lead fw-medium text-muted mt-3" style="max-width: 1200px; margin: auto;">
-            As the first startup recognized by the Rajasthan government for science-based pollutant site restoration, BIPL leads the way in biotechnological innovation. Its proprietary super enzyme offers a pioneering solution for the safe treatment of oil-based environmental pollutants.
-            </p>
-
-            <p class="mt-5 text-end"><a href="about.html" class="bg-warning text-dark p-2 px-5 shadow border border-secondary fs-5 fw-bold">More...</a></p>
+            </div>
         </div>
         </section>
 
-        <section class="py-5 bg-light w-100">
-        <div class="container">
-            <h2 class="fw-semibold mb-3">Core Values</h2>
-            <div class="mx-auto mb-4" style="width: 100%; border-bottom: 1px solid orange;"></div>
 
-            <p class="fw-bold text-secondary mb-5 display-7 text-center" style="">
-            We shall undertake our responsibilities with the utmost integrity, dedication, competence, 
-            and responsiveness to the market, which is the hallmark of our corporate culture.
+        <section class="py-5 w-100" style="background: linear-gradient(to top, #f9f9f9, #ffffff);">
+        <div class="container text-center">
+            <h2 class="fw-bold text-dark mb-4 display-6">Our Core Values</h2>
+            <div class="mx-auto mb-5" style="width: 80px; height: 4px; background: orange; border-radius: 2px;"></div>
+
+            <p class="fw-medium text-muted lead mb-5 px-md-5">
+            We uphold a culture of integrity, dedication, and competence while staying responsive to market needs — the essence of Bioremax Innovation's identity.
             </p>
 
-            <div class="row text-center g-5">
+            <div class="row g-5">
             <!-- Highest Standards -->
             <div class="col-md-4">
-                <div class="mb-3">
-                <div class="rounded-circle mx-auto d-flex align-items-center justify-content-center" style="width: 100px; height: 100px; background-color: #4c6bb5;">
+                <div class="card shadow h-100 border-0">
+                <div class="card-body p-4">
+                    <div class="icon-circle bg-primary mb-3 mx-auto">
                     <i class="fas fa-certificate fa-2x text-white"></i>
+                    </div>
+                    <h5 class="fw-semibold mb-2">Highest Standards</h5>
+                    <hr class="mx-auto mb-3" style="width: 40px;">
+                    <p class="text-muted small">
+                    We prioritize a culture of excellence that permeates every aspect of our services — from reliability to health, safety, and the environment.
+                    </p>
                 </div>
                 </div>
-                <h5 class="fw-normal">Highest Standards</h5>
-                <hr class="mx-auto mb-3" style="width: 30px;">
-                <p class="text-muted fw-semibold small">
-                We place consistent emphasis on delivering a distinctive performance culture, 
-                which is the foundation of our organization and an integral part of our DNA. 
-                This goes across our business in general, as well as service quality, reliability, 
-                health, safety and environment.
-                </p>
             </div>
 
             <!-- Employer of Choice -->
             <div class="col-md-4">
-                <div class="mb-3">
-                <div class="rounded-circle mx-auto d-flex align-items-center justify-content-center" style="width: 100px; height: 100px; background-color: #f26522;">
+                <div class="card shadow h-100 border-0">
+                <div class="card-body p-4">
+                    <div class="icon-circle bg-warning mb-3 mx-auto">
                     <i class="fas fa-users fa-2x text-white"></i>
+                    </div>
+                    <h5 class="fw-semibold mb-2">Employer of Choice</h5>
+                    <hr class="mx-auto mb-3" style="width: 40px;">
+                    <p class="text-muted small">
+                    We foster a safe, empowering environment where employees grow as professionals and industry leaders.
+                    </p>
                 </div>
                 </div>
-                <h5 class="fw-normal">Employer of Choice</h5>
-                <hr class="mx-auto mb-3" style="width: 30px;">
-                <p class="text-muted fw-semibold small">
-                We provide our employees with a secure and stable workplace where they will have 
-                the opportunity to grow and mature as professionals and business leaders.
-                </p>
             </div>
 
             <!-- Corporate Social Responsibility -->
             <div class="col-md-4">
-                <div class="mb-3">
-                <div class="rounded-circle mx-auto d-flex align-items-center justify-content-center" style="width: 100px; height: 100px; background-color: #b3d233;">
-                    <i class="fas fa-lightbulb fa-2x text-white"></i>
+                <div class="card shadow h-100 border-0">
+                <div class="card-body p-4">
+                    <div class="icon-circle" style="background-color: #8BC34A;">
+                    <i class="fas fa-hand-holding-heart fa-2x text-white"></i>
+                    </div>
+                    <h5 class="fw-semibold mb-2">Social Responsibility</h5>
+                    <hr class="mx-auto mb-3" style="width: 40px;">
+                    <p class="text-muted small">
+                    We are dedicated to uplifting communities through sustainable local engagement and environmental stewardship.
+                    </p>
                 </div>
                 </div>
-                <h5 class="fw-normal">Corporate Social Responsibility</h5>
-                <hr class="mx-auto mb-3" style="width: 30px;">
-                <p class="text-muted fw-semibold small">
-                We commit to the development and wellbeing of every community we operate through commitment 
-                to building local content, and focusing on our corporate social responsibility.
-                </p>
             </div>
             </div>
         </div>
         </section>
+
+        <!-- Optional: Circle icon styling -->
+        <style>
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        </style>
+
 
 
 
@@ -302,34 +390,43 @@
         </section>
 
         <section class="py-5 bg-white">
-        <div class="container">
-            <h2 class="fw-semibold mb-2">Some Of Our Clients</h2>
-            <div class="mx-auto mb-4" style="width: 100%; border-bottom: 1px solid orange;"></div>
+        <div class="container text-center">
+            <h2 class="fw-semibold mb-3">Some Of Our Clients</h2>
+            <div class="mx-auto mb-4" style="width: 100%; border-bottom: 2px solid orange;"></div>
 
-            <p class="fw-bold text-secondary mb-5">
+            <p class="fw-semibold text-muted mb-5">
             Our mission is to achieve superior growth by providing products and services that deliver value,
             improve efficiency, maximize production, and increase recovery for our clients to reduce cost per BOE.
             </p>
 
-            <div class="row justify-content-center g-4 align-items-center">
-            <div class="col-6 col-md-2">
-                <img src="https://kuwaitintl.com/wp-content/uploads/2019/04/4-1.jpeg" class="img-fluid" alt="Kuwait Oil Company">
-            </div>
-            <div class="col-6 col-md-2">
-                <img src="https://kuwaitintl.com/wp-content/uploads/2019/04/4-1.jpeg" class="img-fluid" alt="KIPIC">
-            </div>
-            <div class="col-6 col-md-2">
-                <img src="https://kuwaitintl.com/wp-content/uploads/2019/04/4-1.jpeg" class="img-fluid" alt="Kuwait Gulf Oil">
-            </div>
-            <div class="col-6 col-md-2">
-                <img src="https://kuwaitintl.com/wp-content/uploads/2019/04/4-1.jpeg" class="img-fluid" alt="KUFPEC">
-            </div>
-            <div class="col-6 col-md-2">
-                <img src="https://kuwaitintl.com/wp-content/uploads/2019/04/4-1.jpeg" class="img-fluid" alt="KNPC">
-            </div>
+            <div class="owl-carousel owl-theme">
+            <div class="item"><img src="https://kuwaitintl.com/wp-content/uploads/2019/04/4-1.jpeg" class="img-fluid shadow-sm p-2 rounded" alt="Client 1"></div>
+            <div class="item"><img src="https://kuwaitintl.com/wp-content/uploads/2019/04/4-1.jpeg" class="img-fluid shadow-sm p-2 rounded" alt="Client 2"></div>
+            <div class="item"><img src="https://kuwaitintl.com/wp-content/uploads/2019/04/4-1.jpeg" class="img-fluid shadow-sm p-2 rounded" alt="Client 3"></div>
+            <div class="item"><img src="https://kuwaitintl.com/wp-content/uploads/2019/04/4-1.jpeg" class="img-fluid shadow-sm p-2 rounded" alt="Client 4"></div>
+            <div class="item"><img src="https://kuwaitintl.com/wp-content/uploads/2019/04/4-1.jpeg" class="img-fluid shadow-sm p-2 rounded" alt="Client 5"></div>
             </div>
         </div>
         </section>
+
+        <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: { items: 1 },
+                576: { items: 3 },
+                768: { items: 4 },
+                992: { items: 5 }
+            }
+            });
+        });
+        </script>
+
 
 
         <footer id="tfooter" class="w-100"></footer>
