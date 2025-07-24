@@ -155,52 +155,71 @@
 
         <section class="py-5 bg-light w-100">
         <div class="container">
-            <div class="row">
+            <div class="row g-5 align-items-start">
+            
             <!-- Left Section -->
-            <div class="col-lg-6 mb-4">
-                <p class="lead">
-                At KIC, we focus on excellence, quality, and providing the Oil and Gas industry with the best talent in the marketplace.
-                We expect unwavering commitment, drive, integrity, teamwork and entrepreneurship spirit from our teams.
-                If you believe you have what it takes to join a fast growing organization, please update your profile and apply to our available vacancies through the links below.
+            <div class="col-lg-6">
+                <div class="p-4 bg-white shadow-sm rounded-3 h-100">
+                <p class="lead mb-4 text-muted">
+                    At <span class="fw-semibold text-dark">KIC</span>, we focus on excellence, quality, and providing the Oil and Gas industry with the best talent. 
+                    We expect unwavering commitment, drive, integrity, teamwork, and an entrepreneurial spirit from our teams.
+                    If you believe you have what it takes to join a fast-growing organization, please update your profile and apply through the links below.
                 </p>
-                <div class="border-start border-3 border-success ps-3 mt-3">
-                <h6 class="fw-bold mb-0">No available vacancies at the moment.</h6>
+                <div class="border-start border-3 border-success ps-3">
+                    <h6 class="fw-bold mb-0 text-success">No available vacancies at the moment.</h6>
+                </div>
                 </div>
             </div>
 
             <!-- Right Section -->
             <div class="col-lg-6">
-                <h6 class="fw-bold mb-3 text-center text-md-start">Please upload your CV for future consideration</h6>
+                <div class="p-4 bg-white shadow-sm rounded-3">
+                <h5 class="fw-bold mb-3 text-primary text-center text-md-start">Please upload your CV for future consideration</h5>
                 <form>
-                <div class="row g-3">
+                    <div class="row g-3">
                     <div class="col-md-6">
-                    <input type="text" class="form-control" placeholder="Your Name" required>
+                        <input type="text" class="form-control form-control-lg rounded-2" placeholder="Your Name" required>
                     </div>
                     <div class="col-md-6">
-                    <input type="email" class="form-control" placeholder="Your Email" required>
+                        <input type="email" class="form-control form-control-lg rounded-2" placeholder="Your Email" required>
                     </div>
                     <div class="col-md-6">
-                    <input type="text" class="form-control" placeholder="Mobile No." required>
+                        <input type="text" class="form-control form-control-lg rounded-2" placeholder="Mobile No." required>
                     </div>
                     <div class="col-md-6">
-                    <input type="text" class="form-control" placeholder="Job Title">
+                        <input type="text" class="form-control form-control-lg rounded-2" placeholder="Job Title">
                     </div>
                     <div class="col-12">
-                    <textarea class="form-control" rows="4" placeholder="Subject"></textarea>
+                        <textarea class="form-control form-control-lg rounded-2" rows="4" placeholder="Subject"></textarea>
                     </div>
                     <div class="col-12">
-                    <label class="form-label small">Your CV (pdf|doc|docx)</label>
-                    <input type="file" class="form-control" accept=".pdf,.doc,.docx">
+                        <label class="form-label small text-muted mb-1">Your CV (pdf | doc | docx)</label>
+                        <input type="file" class="form-control rounded-2" accept=".pdf,.doc,.docx">
                     </div>
-                    <div class="col-12">
-                    <button type="submit" class="btn btn-warning fw-bold shadow rounded-0" style="width: 120px;">SEND</button>
+                    <div class="col-12 text-end">
+                        <button type="submit" class="btn btn-warning px-5 py-2 fw-bold text-dark shadow rounded-2">
+                        SEND
+                        </button>
                     </div>
-                </div>
+                    </div>
                 </form>
+                </div>
             </div>
+
             </div>
         </div>
         </section>
+
+        <style>
+        .form-control:focus {
+            border-color: #ffc107;
+            box-shadow: 0 0 5px rgba(255, 193, 7, 0.4);
+        }
+        button.btn-warning:hover {
+            background-color: #ffca2c;
+        }
+        </style>
+
 
 
 
